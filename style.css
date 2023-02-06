@@ -1,0 +1,104 @@
+:root {
+    --background-color: #fff;
+    --text-color: #121416d8;
+    --link-color: #543fd7;
+}
+
+html[data-theme='light'] {
+    --background-color: #fff;
+    --text-color: #121416d8;
+    --link-color: #543fd7;
+}
+
+html[data-theme='dark'] {
+    --background-color: #212a2e;
+    --text-color: #F7F8F8;
+    --link-color: #828fff;
+}
+
+body {
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+a {
+    color: var(--link-color);
+}
+
+a:hover {
+    text-decoration: underline;
+    filter: brightness(80%);
+}
+
+.btn-orng {
+    background: #ffcc00;
+    background-image: -webkit-linear-gradient(top, #ffcc00, #ff3c00);
+    background-image: -moz-linear-gradient(top, #ffcc00, #ff3c00);
+    background-image: -ms-linear-gradient(top, #ffcc00, #ff3c00);
+    background-image: -o-linear-gradient(top, #ffcc00, #ff3c00);
+    background-image: linear-gradient(to bottom, #ffcc00, #ff3c00);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+  
+.btn-orng:hover {
+    background: #d9b120;
+    background-image: -webkit-linear-gradient(top, #d9b120, #d94b20);
+    background-image: -moz-linear-gradient(top, #d9b120, #d94b20);
+    background-image: -ms-linear-gradient(top, #d9b120, #d94b20);
+    background-image: -o-linear-gradient(top, #d9b120, #d94b20);
+    background-image: linear-gradient(to bottom, #d9b120, #d94b20);
+    text-decoration: none;
+}
+
+img.rounded {
+    object-fit: cover;
+    border-radius: 50%;
+    width: auto;
+    height: auto;
+}
+
+.onoffswitch {
+    position: relative; width: 55px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    height: 20px; padding: 0; line-height: 20px;
+    border: 0px solid #FFFFFF; border-radius: 30px;
+    background-color: #4D4848;
+}
+.onoffswitch-label:before {
+    content: "";
+    display: block; width: 30px; margin: -5px;
+    background: #262424;
+    position: absolute; top: 0; bottom: 0;
+    right: 31px;
+    border-radius: 30px;
+    box-shadow: 0 6px 12px 0px #757575;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+    background-color: #FCEE83;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+   border-color: #FCEE83;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+    right: 0px; 
+    background-color: #FFF940; 
+    box-shadow: 3px 6px 18px 0px rgba(0, 0, 0, 0.2);
+}
