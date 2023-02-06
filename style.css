@@ -30,31 +30,34 @@ a:hover {
     filter: brightness(80%);
 }
 
-.btn-orng {
-    background: #ffcc00;
-    background-image: -webkit-linear-gradient(top, #ffcc00, #ff3c00);
-    background-image: -moz-linear-gradient(top, #ffcc00, #ff3c00);
-    background-image: -ms-linear-gradient(top, #ffcc00, #ff3c00);
-    background-image: -o-linear-gradient(top, #ffcc00, #ff3c00);
-    background-image: linear-gradient(to bottom, #ffcc00, #ff3c00);
-    -webkit-border-radius: 28;
-    -moz-border-radius: 28;
-    border-radius: 28px;
-    font-family: Arial;
-    color: #ffffff;
-    font-size: 20px;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
+.simple-center {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:100%;
 }
-  
-.btn-orng:hover {
-    background: #d9b120;
-    background-image: -webkit-linear-gradient(top, #d9b120, #d94b20);
-    background-image: -moz-linear-gradient(top, #d9b120, #d94b20);
-    background-image: -ms-linear-gradient(top, #d9b120, #d94b20);
-    background-image: -o-linear-gradient(top, #d9b120, #d94b20);
-    background-image: linear-gradient(to bottom, #d9b120, #d94b20);
-    text-decoration: none;
+
+.common-button {
+	background:linear-gradient(to bottom, #ff9900 5%, #f08400 100%);
+	background-color:#ff9900;
+	border-radius:28px;
+    border: none;
+	cursor:pointer;
+	color:#f7f8f8;
+	font-family:Courier New;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #000000;
+}
+.common-button:hover {
+	background:linear-gradient(to bottom, #f08400 5%, #ff9900 100%);
+	background-color:#f08400;
+}
+.common-button:active {
+	position:relative;
+	top:1px;
 }
 
 img.rounded {
