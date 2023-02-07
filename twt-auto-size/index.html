@@ -1,1 +1,45 @@
-nothing yet...
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="twt-style.css" />
+    <link rel="stylesheet" type="text/css" href="..\style.css" />
+
+    <title>Clamtime's Tools</title>
+</head>
+
+<body>
+    <div class="simple-center">
+        <div class="container">
+            <div class="Title">
+                <h1>Twitter Aspect Ratio Tool</h1>
+                <br>
+                <h5>Use this tool to properly size any image to display correctly as a single-image tweet.</h5>
+            </div>
+            <div class="Entry">
+                <div id="display_image"></div>
+            </div>
+            <div class="Result">
+                <div id="converted_image"></div>
+            </div>
+            <div class="ButtonLeft">
+                <div class="simple-center">
+                    <input type="file" id="image_output" accept="image/png, image/jpg">
+                </div>
+            </div>
+            <div class="ButtonRight">
+                <div class="simple-center">
+                    <div class="common-button" onclick="convertAspectRatio()">Convert!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src=" script.js">
+    </script>
+</body>
+
+</html>

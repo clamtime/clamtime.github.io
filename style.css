@@ -60,6 +60,14 @@ a:hover {
 	top:1px;
 }
 
+.common-button input {
+    display: block !important;
+    width: 157px !important;
+    height: 57px !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+}
+
 img.rounded {
     object-fit: cover;
     border-radius: 50%;

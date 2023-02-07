@@ -1,0 +1,63 @@
+.container {  
+    display: grid; 
+    grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr; 
+    grid-template-rows: 0.6fr 1.8fr 0.6fr; 
+    gap: 5% 5%; 
+    grid-template-areas: 
+      ". Title Title ."
+      ". Entry Result ."
+      ". ButtonLeft ButtonRight ."; 
+    width: auto;
+    height: auto;
+    max-width: 60%;
+    max-height: 60%;
+}
+
+.Title { 
+    grid-area: Title;  
+    text-align: center;
+    font-family: "Courier";
+}
+.ButtonLeft { 
+    grid-area: ButtonLeft; 
+    text-align: center;
+    font-family: "Courier";
+}
+.ButtonRight { 
+    grid-area: ButtonRight; 
+    text-align: center;
+    font-family: "Courier";
+}
+.Result {
+    min-width: 100%;
+     grid-area: Result; 
+     text-align: center;
+     font-family: "Courier";
+    }
+.Entry {
+    min-width: 100%;
+
+    grid-area: Entry; 
+    text-align: center;
+    font-family: "Courier";
+}  
+
+#display_image {
+    width:100%;
+    height:100%;
+    border: 1px solid black;
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+#converted_image {
+    width:100%;
+    height:100%;
+    border: 1px solid black;
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+    
